@@ -18,11 +18,11 @@ Converts PWM signal into a 16bit unidirectional D-Shot frame. There are 4 mian f
 ## How to test
 
 Inputs:
-- 10MHz clk signal
-- 50Hz PWM signal (50% dc and 1500us PW to test)
-- Telemetry bit 
-  - 0 no tlm request
-  - 1 tlm request
+-  10MHz clk signal
+-  50Hz PWM signal (50% dc and 1500us PW to test)
+-  Telemetry bit 
+  -  0 no tlm request
+  -  1 tlm request
 - Start bit 
   - 1 start transmission
   - 0 idle
