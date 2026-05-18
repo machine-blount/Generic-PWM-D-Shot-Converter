@@ -9,12 +9,22 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+Converts PWM signal into a 16bit unidirectional D-Shot frame. There are 4 mian functioanl blocks.
+1. Affine mapping pulsewidth to an 11 bit throttle range.
+2. Buffering the 1-bit tlm(telemetry) signal
+3. Calculating a 4-bit CRC from the 12-bit tlm and throttle data internally
+4. Transmitting frame serially, MSB first
 
 ## How to test
 
-Explain how to use your project
+inputs:
+1MHz minimum clk signal 
+50Hz PWM signal
+telemetry bit 
+- 0 no tlm request
+- 1 tlm request
+
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+N/A
